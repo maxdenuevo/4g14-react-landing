@@ -1,31 +1,66 @@
-# Create React App
+# <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo"  /> Landing page with React
 
-This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
+## Overview
 
-## Deploy Your Own
+This project demonstrates component-based architecture using React functional components. The landing page is split into reusable Bootstrap components, all imported into a main `Home.jsx` component.
 
-Deploy your own Create React App project with Vercel.
+## Technologies Used
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/framework-boilerplates/create-react-app&template=create-react-app)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-_Live Example: https://create-react-template.vercel.app/_
+<br/>
 
-## Available Scripts
+Split Bootstrap components into different function components; they'll all be imported into the main component Home.jsx
 
-In the project directory, you can run:
+## Project Requirements
 
-### `npm start`
+- All components must be function components
+- The `<Card />` component should be reusable with different content passed through props
+- Follow the provided design closely
+- Ensure responsive design using Bootstrap
 
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Structure
 
-The page will reload when you make changes. You may also see any lint errors in the console.
+The landing page is broken down into the following components:
 
-### `npm test`
+- `<Navbar />` - Navigation bar component
+- `<Jumbotron />` - Hero section component
+- `<Card />` - Reusable card component using props for different content
+- `<Home />` - Main component that imports all other components
+- `<Footer />`-
 
-Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Component Strategy
 
-### `npm run build`
+![Component Strategy](https://github.com/breatheco-de/exercise-landing-page-with-react/blob/master/strategy.gif?raw=true)
 
-Builds the app for production to the `build` folder.
+Key considerations for component architecture:
 
-It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
+- Identify reusable components
+- Follow DRY (Don't Repeat Yourself) principles
+- Use props to handle varying content (especially for cards)
+- Keep components small and focused
+- Maintain clean separation of concerns
+
+, `<Footer />`, `<Navbar />`, `<Navbar />`
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+   The app will run at [http://localhost:3000](http://localhost:3000)
+
+### Project Source
+
+This exercise is part of the complete 4Geeks Academy Full Stack course:
+
+[![4Geeks Academy](https://img.shields.io/badge/4Geeks%20Academy-blue.svg)](https://4geeks.com/interactive-coding-tutorial/todo-list)
